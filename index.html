@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mitte Pushpa | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Background Animation -->
+  <div class="animated-bg"></div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="hero">
+      <h1 class="hero-name">Mitte Pushpa</h1>
+      <p class="tagline">Aspiring Software Engineer | Java Learner | Innovator</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#objective"><i class="fas fa-bullseye"></i> Objective</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+        <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <main>
+    <section id="objective">
+      <h2><i class="fas fa-bullseye"></i> Objective</h2>
+      <div class="card glow-card">
+        <p>Acquiring practical experience, developing technical skills, and contributing to a team's success.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="card glow-card">
+        <h3><i class="fas fa-university"></i> B.Tech – St. John's College of Engineering & Technology</h3>
+        <p><i class="fas fa-calendar"></i> 2022 – 2026 (Pursuing)</p>
+      </div>
+      <div class="card glow-card">
+        <h3><i class="fas fa-school"></i> Intermediate – Deeksha Junior College, Yemmiganur</h3>
+        <p><i class="fas fa-calendar"></i> 2020 – 2022 | <i class="fas fa-star"></i> 823 Marks</p>
+      </div>
+      <div class="card glow-card">
+        <h3><i class="fas fa-book"></i> SSC – MSZP High School (Girls), Yemmiganur</h3>
+        <p><i class="fas fa-calendar"></i> 2019 – 2020 | <i class="fas fa-star"></i> 566 Marks</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><i class="fas fa-tools"></i> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item glow-card">
+          <i class="fab fa-java"></i>
+          <span>Learning Java</span>
+        </div>
+        <div class="skill-item glow-card">
+          <i class="fas fa-comments"></i>
+          <span>Good Communication Skills</span>
+        </div>
+        <div class="skill-item glow-card">
+          <i class="fas fa-file-word"></i>
+          <span>MS Office</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2><i class="fas fa-briefcase"></i> My Portfolio</h2>
+      <div class="portfolio-container">
+        <!-- Internship Card -->
+        <div class="card glow-card">
+          <h3><i class="fas fa-microchip"></i> VLSI Internship – SkillDzire</h3>
+          <p>Acquired knowledge in chip design and verification, bridging the gap between academics and industry requirements.</p>
+        </div>
+
+        <!-- Project Card -->
+        <div class="card glow-card">
+          <h3><i class="fas fa-lock"></i> Smart Door Lock System Using Arduino</h3>
+          <p>An innovative lock system eliminating direct contact between user and lock. Replaces traditional locks with electronic systems for better security and convenience.</p>
+        </div>
+
+        <!-- Certification Card -->
+        <div class="card glow-card">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <p>ISRO Space Technology, Remote Sensing & Digital Image Analysis, and Full Stack Web Development Master Class from Pantech.AI & Warriors Way.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item glow-card">
+          <i class="fas fa-envelope"></i>
+          <p>Email: <a href="mailto:pushpamittee@gmail.com">pushpamittee@gmail.com</a></p>
+        </div>
+        <div class="contact-item glow-card">
+          <i class="fas fa-phone"></i>
+          <p>Phone: +91 8464904501</p>
+        </div>
+        <div class="contact-item glow-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Location: Yemmiganur, Kurnool, Andhra Pradesh</p>
+        </div>
+        <div class="contact-item glow-card linkedin-card">
+          <i class="fab fa-linkedin"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/pushpa-mitte-478713356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              🔗 LinkedIn Profile
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><i class="fas fa-heart"></i> © 2025 Mitte Pushpa | Portfolio</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
